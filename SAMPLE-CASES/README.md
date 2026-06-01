@@ -25,3 +25,18 @@ Tool sequence: list_case_types → get_case_type_format("consumer-appeal-section
 - Placeholders only (`[BUILDER]`, `[HOSPITAL]`, `[DR-X]`, `[P]`, `[SUM-A]`, `[CC-N]`, etc.). No real client data.
 - No external API keys / accounts required.
 - `save_draft_as_docx` requires `pandoc`.
+
+---
+
+## Synthetic case folder for Anthropic reviewer
+
+A fully-fictional, AAAK-pseudonymised case folder is bundled at:
+
+`SAMPLE-CASES/synthetic-district-commission-delayed-possession/`
+
+It contains 4 source documents (.docx) plus a `case-facts-background.md` narrative.
+
+**To exercise the pipeline end-to-end**, point `read_case_folder(path)` at this folder and follow the orchestration script returned by `get_agent_instructions()`. The Reader stage will extract facts, the Format stage will load the case-type SKILL.md template, and the remaining four agents (Drafter → Verifier → Refiner → Overseer) will produce `final-draft.docx`.
+
+All identifiers in the bundled documents are structural placeholders. The Pseudonymisation Gateway is therefore exercising against pre-pseudonymised content; reviewers seeking to test re-substitution may replace placeholders with their own fictional values before invoking the pipeline.
+
