@@ -1,3 +1,19 @@
+<div align="center">
+
+<img src="docs/banner.png" width="820"/>
+
+**Six-agent drafting pipeline for India's Consumer Forums — District, State, and NCDRC.**
+
+Visit the live site: [wolfgangrush.github.io](https://wolfgangrush.github.io)
+
+![license](https://img.shields.io/badge/license-MIT-green.svg)
+![pipeline](https://img.shields.io/badge/pipeline-6--agent-blue)
+![forums](https://img.shields.io/badge/forums-District%20%7C%20State%20%7C%20NCDRC-orange)
+![format](https://img.shields.io/badge/format-MCPB-purple)
+
+</div>
+
+
 # wolfgang_rush — Indian Consumer Forum Drafting
 
 **MCPB Desktop Extension** for drafting pleadings before District / State / National Consumer Disputes Redressal Commissions under the Consumer Protection Act 2019.
